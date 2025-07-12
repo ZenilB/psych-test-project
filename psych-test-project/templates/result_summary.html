@@ -1,0 +1,24 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Previous Test Result</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="full-width">
+    <div class="container result-summary">
+        <h2>Welcome back, {{ username }}!</h2>
+
+        <div class="summary-box">
+            <h3>Your Last Test Result</h3>
+            <p><strong>Test Type:</strong> {{ result.test_type }}</p>
+            <p><strong>Score:</strong> {{ result.score }}</p>
+            <p><strong>Result:</strong> {{ result.result }}</p>
+            <p><strong>Date:</strong> {{ result.date }}</p>
+        </div>
+
+        <a href="{{ url_for('dashboard') }}" class="btn">Go to Dashboard</a>
+    </div>
+</body>
+</html>

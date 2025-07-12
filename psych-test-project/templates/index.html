@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MindCheck – Explore Yourself</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+  <!-- Header -->
+  <header class="site-header">
+    <div class="logo">🧠 MindCheck</div>
+    <nav class="navbar">
+      <a href="/">Home</a>
+      <a href="#about">About</a>
+      <a href="#tests">Tests</a>
+      <a href="#contact">Contact</a>
+      <a href="/dashboard">Login</a>
+    </nav>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <!-- <img src="{{ url_for('static', filename='images/homepage_hero.jpg') }}" class="hero-img" alt="MindCheck"> -->
+    <div class="hero-overlay">
+      <h1>Psychological Test</h1>
+      <p class="subheading">Discover Yourself</p>
+      <p>Take psychological tests to understand yourself better</p>
+      <br>
+      <br>
+      <a href="/dashboard" class="start-btn">Start Now</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about-section">
+    <div class="container">
+      <h2>About MindCheck</h2>
+      <p>— MindCheck is your personal mental mirror — <br>a safe space to explore and understand your inner world.
+Whether you're curious about your personality traits, want to evaluate your intelligence, reflect on your attitude, or check in on your emotional well-being, MindCheck offers a range of carefully designed psychological assessments. Backed by psychological research and crafted with empathy, our tests help you gain deeper insights into who you are and how you think, feel, and behave.
+Take the first step towards self-awareness and personal growth <br><i>— Because understanding yourself is the beginning of everything. —</i>
+
+</p>
+    </div>
+  </section>
+
+  <!-- Tests Overview Section -->
+  <section id="tests" class="test-overview">
+    <div class="container">
+      <h2>Explore Our Tests</h2>
+      <div class="test-grid">
+        <div class="test-card">
+          <h3>Personality</h3>
+          <p>Find out your personality type and traits.</p>
+        </div>
+        <div class="test-card">
+          <h3>Intelligence</h3>
+          <p>Measure your logical and reasoning abilities.</p>
+        </div>
+        <div class="test-card">
+          <h3>Attitude</h3>
+          <p>Understand your mindset and behavior.</p>
+        </div>
+        <div class="test-card">
+          <h3>Depression</h3>
+          <p>Check your emotional health and mood levels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; 2025 MindCheck. All rights reserved.</p>
+      <p>
+        <a href="#">Privacy Policy</a> | <a href="#">Terms</a>
+      </p>
+    </div>
+  </footer>
+</body>
+</html>

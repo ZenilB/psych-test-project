@@ -1,0 +1,128 @@
+/* Background and layout */
+body.test-page.personality-bg {
+  background: linear-gradient(to right, #0f172a, #1e3a8a);
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #f8fafc;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.test-header {
+  text-align: center;
+  padding: 2rem;
+  background: rgba(15, 23, 42, 0.9);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  border-bottom: 2px solid #3b82f6;
+}
+
+.gradient-heading {
+  font-size: 3.5rem;
+  font-weight: bold;
+  display: inline-block;
+  background: linear-gradient(to right, #d70c72, #1e1aed, #15d367);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  color: transparent;
+}
+
+
+.test-header p {
+  font-size: 1.2rem;
+  color: #cbd5e1;
+}
+
+/* Form layout */
+.test-form {
+  max-width: 900px;
+  margin: auto;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+/* Progress bar */
+.progress-bar {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  height: 12px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+}
+
+.progress-bar .fill {
+  height: 100%;
+  width: 0;
+  background: linear-gradient(to right, #f32fbb, #8a1de3, #1d37e3, #0cf5ba);
+
+  transition: width 0.3s ease;
+}
+
+/* Question block */
+.question-block {
+  background: rgba(255, 255, 255, 0.05);
+  padding: 1.5rem;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
+  transition: transform 0.2s ease;
+}
+
+.question-block:hover {
+  transform: scale(1.01);
+}
+
+.question-block p {
+  font-size: 1.6rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  color: #facc15;
+  text-align: center;
+}
+
+/* Scale / Options */
+.scale {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.scale label {
+  display: flex;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.08);
+  padding: 0.75rem 1rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  color: #e2e8f0;
+}
+
+.scale label:hover {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.scale input[type="radio"] {
+  margin-right: 0.75rem;
+  accent-color: #60a5fa;
+}
+
+/* Submit Button */
+.submit-btn {
+  align-self: center;
+  padding: 0.8rem 2rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #f9fafb;
+  background: #2563eb;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.submit-btn:hover {
+  background: #1d4ed8;
+  transform: translateY(-2px);
+}
