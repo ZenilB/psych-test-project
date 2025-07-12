@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard – MindCheck</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body class="dashboard-page">
+
+  <header class="dashboard-header">
+    <div class="dashboard-header-content">
+      <h1>Welcome, {{ username }}...!</h1>
+      <a href="/logout" class="logout-button">Logout</a>
+    </div>
+  </header>
+
+  <main class="dashboard-main">
+    {% if last_result %}
+      <section class="last-result-section">
+  <h2>🧠 Take a Look at Your Last Test Result</h2>
+  <div class="last-result-card">
+    <div class="result-item">
+      <span class="label">Test:</span>
+      <span class="value">{{ last_result.test }}</span>
+    </div>
+    <div class="result-item">
+      <span class="label">Result:</span>
+      <span class="value">{{ last_result.result }}</span>
+    </div>
+
+    <a href="{{ last_result.link }}" class="view-full-result">🔍 View Full Result</a>
+  </div>
+</section>
+
+    {% endif %}
+
+    <section class="test-section">
+    <h2 class="section-heading">✨ Take a Test</h2>  <div class="test-options">
+
+    <div class="test-card">
+      <h3>Personality Test</h3>
+      <p class="test-description">Discover your personality type and better understand your behavior and motivations.</p>
+      <a href="/personality_test" class="test-button">Start Test</a>
+    </div>
+
+    <div class="test-card">
+      <h3>Intelligence Test</h3>
+      <p class="test-description">Evaluate your logical reasoning, problem-solving, and cognitive abilities.</p>
+      <a href="/intelligence_test" class="test-button">Start Test</a>
+    </div>
+
+    <div class="test-card">
+      <h3>Attitude Test</h3>
+      <p class="test-description">Understand your perspective and reactions to various life situations.</p>
+      <a href="/attitude_test" class="test-button">Start Test</a>
+    </div>
+
+    <div class="test-card">
+      <h3>Depression Test</h3>
+      <p class="test-description">Check for common symptoms of depression and get a better sense of your mental state.</p>
+      <a href="/depression_test" class="test-button">Start Test</a>
+    </div>
+
+  </div>
+</section>
+
+  </main>
+
+</body>
+</html>

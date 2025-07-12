@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  <title>Personality Test</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/test.css') }}">
+  <script src="{{ url_for('static', filename='js/progress.js') }}" defer></script>
+
+</head>
+<body class="test-page personality-bg">
+
+  <header class="test-header">
+    <h1  class="gradient-heading">Personality Test</h1>
+    <p>Discover your personality type based on your preferences</p>
+  </header>
+
+  <form method="POST" action="/personality_test" class="test-form">
+    <div class="progress-bar">
+      <div class="fill" id="progressFill"></div>
+    </div>
+
+    {% for question in questions %}
+      <div class="question-block" data-question="{{ loop.index }}">
+        <p>{{ loop.index }}. {{ question.question }}</p>
+        <div class="scale">
+          {% set name = "q" ~ loop.index0 %}
+          {% for i in range(1, 6) %}
+            <label>
+              <input type="radio" name="{{ name }}" value="{{ i }}" required />
+              {{ ['Strongly Disagree', 'Disagree', 'Neutral', 'Agree', 'Strongly Agree'][i-1] }}
+            </label>
+          {% endfor %}
+        </div>
+      </div>
+    {% endfor %}
+
+    <button type="submit" class="submit-btn">Submit</button>
+  </form>
+
+  <script>
+    const questions = document.querySelectorAll('.question-block');
+    const progressFill = document.getElementById('progressFill');
+
+    function updateProgress() {
+      const answered = Array.from(questions).filter(q => {
+        const radios = q.querySelectorAll('input[type="radio"]');
+        return Array.from(radios).some(r => r.checked);
+      });
+      const percent = (answered.length / questions.length) * 100;
+      progressFill.style.width = percent + '%';
+    }
+
+    document.querySelectorAll('input[type="radio"]').forEach(radio => {
+      radio.addEventListener('change', updateProgress);
+    });
+  </script>
+
+</body>
+</html>

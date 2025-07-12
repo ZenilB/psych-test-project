@@ -1,0 +1,53 @@
+
+[
+  {
+    "question": "You enjoy vibrant social events with lots of people.",
+    "dimension": "E/I",
+    "direction": "E"
+  },
+  {
+    "question": "You often spend time exploring unrealistic yet intriguing ideas.",
+    "dimension": "N/S",
+    "direction": "N"
+  },
+  {
+    "question": "Your travel plans are more likely to look like a rough list of ideas than a detailed itinerary.",
+    "dimension": "J/P",
+    "direction": "P"
+  },
+  {
+    "question": "You are more inclined to follow your head than your heart.",
+    "dimension": "T/F",
+    "direction": "T"
+  },
+  {
+    "question": "You often prefer to be alone to recharge rather than socializing.",
+    "dimension": "I/E",
+    "direction": "I"
+  },
+  {
+    "question": "You find it easy to stay relaxed and focused even when under pressure.",
+    "dimension": "F/T",
+    "direction": "T"
+  },
+  {
+    "question": "You rely more on imagination than past experience when solving problems.",
+    "dimension": "S/N",
+    "direction": "N"
+  },
+  {
+    "question": "Your work style is closer to spontaneous bursts of energy than organized consistency.",
+    "dimension": "P/J",
+    "direction": "P"
+  },
+  {
+    "question": "You rarely worry about how your actions affect other people.",
+    "dimension": "F/T",
+    "direction": "T"
+  },
+  {
+    "question": "You tend to avoid being the center of attention.",
+    "dimension": "E/I",
+    "direction": "I"
+  }
+]

@@ -1,0 +1,53 @@
+
+[
+  {
+    "question": "Which number comes next in the sequence: 2, 4, 8, 16, ?",
+    "options": ["18", "20", "32", "34"],
+    "answer": "32"
+  },
+  {
+    "question": "If all bloops are razzies and all razzies are lazzies, then are all bloops definitely lazzies?",
+    "options": ["Yes", "No", "Cannot say", "Only some"],
+    "answer": "Yes"
+  },
+  {
+    "question": "What is the missing letter in this series? A, C, F, J, O, ?",
+    "options": ["U", "T", "S", "V"],
+    "answer": "U"
+  },
+  {
+    "question": "If it takes 5 machines 5 minutes to make 5 widgets, how long would 100 machines take to make 100 widgets?",
+    "options": ["100 minutes", "5 minutes", "20 minutes", "50 minutes"],
+    "answer": "5 minutes"
+  },
+  {
+    "question": "Which one of the following is least like the others?",
+    "options": ["Dog", "Lion", "Snake", "Elephant"],
+    "answer": "Snake"
+  },
+  {
+    "question": "Mary is 16 years old. She is four times as old as her brother. How old will Mary be when she is twice as old as him?",
+    "options": ["20", "24", "22", "26"],
+    "answer": "24"
+  },
+  {
+    "question": "Find the odd one out: 3, 5, 11, 14, 17",
+    "options": ["3", "5", "14", "17"],
+    "answer": "14"
+  },
+  {
+    "question": "What is the next number in the pattern: 1, 1, 2, 3, 5, 8, ?",
+    "options": ["13", "10", "12", "11"],
+    "answer": "13"
+  },
+  {
+    "question": "If you rearrange the letters 'CIFAIPC' you would have the name of a:",
+    "options": ["City", "Ocean", "Animal", "Country"],
+    "answer": "Country"
+  },
+  {
+    "question": "If John's mother has four children: April, May, June, what's the fourth child's name?",
+    "options": ["July", "John", "August", "March"],
+    "answer": "John"
+  }
+]
